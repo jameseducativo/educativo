@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var person = prompt("Ingrese una palabra para palindromo");
+        //var per = person.reverse();
+        //alert(per);
+        console.log(person);
+        var normal = "";
+        var raro = "";
+        for(var i in person){
+            document.write(i+":"+person[i]+"<br>");
+            normal += person[i];
+        }
+        //document.write(person.length);
+        while(i>=0){
+            document.write(i+":"+person[i]+"<br>");
+            raro += person[i];
+            i--;
+        }
+        document.write(normal);
+        if(normal == raro){
+            document.write("Correcto");
+        }
+        else{
+            document.write("MAL");
+        }
+        //document.write(person);
+    </script>
+</body>
+</html>
