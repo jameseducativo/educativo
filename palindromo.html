@@ -7,30 +7,26 @@
 </head>
 <body>
     <script>
-        var person = prompt("Ingrese una palabra para palindromo");
-        //var per = person.reverse();
-        //alert(per);
-        console.log(person);
-        var normal = "";
-        var raro = "";
-        for(var i in person){
-            document.write(i+":"+person[i]+"<br>");
-            normal += person[i];
+        var valor = prompt("Ingrese un palindromo");
+        var val2 = "";
+        for(var i = 0;i<valor.length;i++){
+            document.write(i + valor[i] + "<br>");
         }
-        //document.write(person.length);
+        //document.write(i);
+        i = i - 1;
         while(i>=0){
-            document.write(i+":"+person[i]+"<br>");
-            raro += person[i];
+            document.write(i + valor[i] + "<br>");
+            val2 = val2 + valor[i];
             i--;
         }
-        document.write(normal);
-        if(normal == raro){
+        document.write(val2);
+        if(valor == val2){
             document.write("Correcto");
         }
         else{
-            document.write("MAL");
+            document.write("Falso");
         }
-        //document.write(person);
-    </script>
+        </script>
+        
 </body>
 </html>
